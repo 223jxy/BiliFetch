@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BiliFetch - 脚本猫 B站下载助手</title>
+  <meta name="description" content="BiliFetch 是以脚本猫为主线的 B 站下载助手，网站用于安装脚本、查看教程、下载可选本地助手并获取更新。">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header" data-header>
+    <a class="brand" href="#top" aria-label="BiliFetch 首页">
+      <span class="brand-mark">BF</span>
+      <span>BiliFetch</span>
+    </a>
+    <nav class="nav-links" aria-label="主导航">
+      <a href="#features">特色</a>
+      <a href="#workflow">流程</a>
+      <a href="#downloads">下载</a>
+      <a href="./tutorial.html">教程</a>
+      <a href="#faq">问答</a>
+    </nav>
+    <a class="nav-action" href="./scriptcat/BiliFetch-ScriptCat.user.js">安装脚本猫脚本</a>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-bg" src="./assets/bilifetch-product-preview.png" alt="BiliFetch 软件和脚本面板预览">
+      <div class="hero-overlay"></div>
+      <div class="hero-inner">
+        <p class="eyebrow">脚本猫主线 + 网站服务 + 可选本地助手</p>
+        <h1 id="hero-title">BiliFetch</h1>
+        <p class="hero-copy">以脚本猫脚本为核心的 B 站视频保存助手。网站负责安装、教程、更新和下载可选增强组件；脚本负责识别视频、选择清晰度、下载字幕弹幕，并把合并任务交给本地助手。</p>
+        <div class="hero-actions" aria-label="主要操作">
+          <a class="button primary" href="./scriptcat/BiliFetch-ScriptCat.user.js">安装脚本猫脚本</a>
+          <a class="button secondary" href="./downloads/BiliFetch-Beginner.zip">下载可选本地助手</a>
+        </div>
+        <div class="hero-stats" aria-label="核心能力">
+          <span><strong>2.3.1</strong> 当前脚本版本</span>
+          <span><strong>默认</strong> 合并 MP4</span>
+          <span><strong>可拖动</strong> 浏览器面板</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-start" aria-labelledby="quick-title">
+      <div class="section-head">
+        <p class="eyebrow">Quick Start</p>
+        <h2 id="quick-title">脚本猫用户的 3 步入口</h2>
+      </div>
+      <div class="steps">
+        <article class="step-card">
+          <span class="step-index">1</span>
+          <h3>先安装脚本</h3>
+          <p>点击安装脚本猫脚本，保存并启用。以后更新也围绕这一个脚本进行。</p>
+        </article>
+        <article class="step-card">
+          <span class="step-index">2</span>
+          <h3>打开 B 站视频页</h3>
+          <p>右下角出现 BiliFetch 面板，自动识别页面视频，默认选中当前视频。</p>
+        </article>
+        <article class="step-card">
+          <span class="step-index">3</span>
+          <h3>按需启动增强助手</h3>
+          <p>需要更稳的音视频合并时，再下载本地助手；它只是脚本猫的增强组件。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="features" class="feature-band" aria-labelledby="features-title">
+      <div class="section-head">
+        <p class="eyebrow">Features</p>
+        <h2 id="features-title">脚本猫里完成选择，增强助手只负责重活</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span class="feature-icon">01</span>
+          <h3>自动识别页面视频</h3>
+          <p>普通视频、分 P、合集都显示成可勾选列表，用户自己选，不再纠结当前分 P 和全部分 P。</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">02</span>
+          <h3>默认最高可用清晰度</h3>
+          <p>默认选择最高可用清晰度，也可以手动限制到 1080P、720P 等更合适的版本。</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">03</span>
+          <h3>本地助手是可选增强</h3>
+          <p>脚本能独立识别和发起下载；遇到音视频分离的大视频时，本地助手负责更稳定地下载和合并。</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">04</span>
+          <h3>内容可多选</h3>
+          <p>除了合并 MP4，也能同时选择字幕、弹幕、封面、信息 JSON 或命令导出。</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">05</span>
+          <h3>拖动式浏览器面板</h3>
+          <p>脚本面板可以按住标题栏移动，并记住上次位置，不挡播放区和网页按钮。</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">06</span>
+          <h3>助手状态检测</h3>
+          <p>在脚本面板里一键检查本地助手是否启动、下载目录在哪里，以及 ffmpeg 是否可用。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="workflow" class="workflow" aria-labelledby="workflow-title">
+      <div class="section-head">
+        <p class="eyebrow">Workflow</p>
+        <h2 id="workflow-title">脚本猫是入口，网站和助手都为它服务</h2>
+      </div>
+      <div class="flow">
+        <div class="flow-item">
+          <span>脚本猫脚本</span>
+          <strong>识别视频和清晰度</strong>
+        </div>
+        <div class="flow-line"></div>
+        <div class="flow-item">
+          <span>网站</span>
+          <strong>提供安装和更新</strong>
+        </div>
+        <div class="flow-line"></div>
+        <div class="flow-item">
+          <span>本地助手</span>
+          <strong>可选下载合并</strong>
+        </div>
+        <div class="flow-line"></div>
+        <div class="flow-item">
+          <span>下载目录</span>
+          <strong>保存完成文件</strong>
+        </div>
+      </div>
+    </section>
+
+    <section id="downloads" class="download-band" aria-labelledby="downloads-title">
+      <div class="section-head">
+        <p class="eyebrow">Downloads</p>
+        <h2 id="downloads-title">脚本为主，助手为辅</h2>
+      </div>
+      <div class="download-grid">
+        <article class="download-card recommended">
+          <span class="tag">主线入口</span>
+          <h3>脚本猫脚本</h3>
+          <p>项目核心文件。安装后在 B 站视频页自动出现 BiliFetch 面板，负责识别、选择和发起下载。</p>
+          <a class="button primary" href="./scriptcat/BiliFetch-ScriptCat.user.js">安装脚本</a>
+        </article>
+        <article class="download-card">
+          <span class="tag">可选增强</span>
+          <h3>本地助手包</h3>
+          <p>用于提升音视频分离场景的成功率，提供自动安装 ffmpeg、启动助手和诊断日志。</p>
+          <a class="button secondary" href="./downloads/BiliFetch-Beginner.zip">下载本地助手</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="faq" class="faq" aria-labelledby="faq-title">
+      <div class="section-head">
+        <p class="eyebrow">FAQ</p>
+        <h2 id="faq-title">常见疑问</h2>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>项目重心是脚本猫还是软件？</summary>
+          <p>脚本猫是主线。网站用于安装和教程，本地助手只是提升合并成功率的可选增强组件。</p>
+        </details>
+        <details>
+          <summary>不装本地助手能用吗？</summary>
+          <p>能用。脚本仍可识别视频并处理可直接下载的内容；遇到音视频分离或大文件合并时，建议启动本地助手。</p>
+        </details>
+        <details>
+          <summary>会绕过会员或版权限制吗？</summary>
+          <p>不会。BiliFetch 只处理你当前页面能访问到的资源，请只保存自己有权使用的内容。</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>BiliFetch</span>
+    <span>以脚本猫为主线的网站式 B 站下载助手</span>
+    <a href="#top">回到顶部</a>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
